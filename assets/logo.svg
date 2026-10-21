@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect width="40" height="40" rx="10" fill="#be185d"/>
+  <!-- "R" made of two parallel lines -->
+  <g fill="none" stroke-linejoin="round">
+    <path d="M13 30V11h8.5a5.5 5.5 0 0 1 0 11h-6l9.5 8" stroke="#ffffff" stroke-width="6"/>
+    <path d="M13 30V11h8.5a5.5 5.5 0 0 1 0 11h-6l9.5 8" stroke="#be185d" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranida Sagyntayeva — IT Management student at KBTU</title>
+  <meta name="description" content="Portfolio of Ranida Sagyntayeva, a third-year IT Management student at KBTU interested in data analysis, machine learning and UI/UX.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#about">
+        <img src="assets/logo.svg" alt="" width="32" height="32">
+        Ranida Sagyntayeva
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="button button--ghost" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">IT Management · KBTU · 3rd year</p>
+          <h1>Hi, I'm Ranida. I connect data, people and interfaces.</h1>
+          <p class="lead">
+            I'm a third-year IT Management student at Kazakh-British Technical University.
+            I'm most interested in data analysis, machine learning and UI/UX design: understanding
+            what the data says, and then presenting it in an interface that people find easy to use.
+          </p>
+          <p>
+            I write most of my code in Python, from small Pygame games to scripts for my labs,
+            and I design screens in Figma. This semester I'm also learning frontend development
+            step by step, from a plain semantic HTML page to typed React components.
+          </p>
+          <a class="button" href="#projects">See my projects</a>
+        </div>
+
+        <aside class="card">
+          <h2>Skills</h2>
+          <h3>Programming</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Pygame</li>
+          </ul>
+          <h3>Design</h3>
+          <ul class="tags">
+            <li>Figma</li>
+            <li>UI/UX basics</li>
+          </ul>
+          <h3>Learning in IWaMAD</h3>
+          <ul class="tags">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Git</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section__intro">A set of Python games and my IWaMAD coursework, week by week.</p>
+
+        <div class="projects">
+          <article class="card project">
+            <h3>Pygame games: Snake, Racer and Paint</h3>
+            <p>
+              Three desktop programs in Python. Snake speeds up with every level, Racer is a
+              car game with coins, and Paint lets you draw with colours, shapes and an eraser.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Pygame</li>
+            </ul>
+            <a href="https://github.com/sagyntayeva/pp2">Source code on GitHub</a>
+          </article>
+
+          <article class="card project">
+            <h3>Week 1: Semantic HTML profile</h3>
+            <p>
+              My first page in plain HTML5: a header, anchor navigation, a goals table and a
+              contact form with native required fields.
+            </p>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>Git</li>
+            </ul>
+            <a href="https://github.com/sagyntayeva/iwamad-practice/tree/week-1">Source code on GitHub</a>
+          </article>
+
+          <article class="card project">
+            <h3>Week 3: React profile card</h3>
+            <p>
+              The same profile rebuilt as typed React components: Header, ProfileCard, SkillBadge
+              and Footer. Skill badges are rendered from a data array.
+            </p>
+            <ul class="tags">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+            </ul>
+            <a href="https://github.com/sagyntayeva/iwamad-practice/tree/week-03">Source code on GitHub</a>
+          </article>
+
+          <article class="card project">
+            <h3>Week 4: Routing and tests</h3>
+            <p>
+              Home, Skills, Contact and 404 pages with React Router. A like counter is shared
+              through React Context and checked with a Vitest test.
+            </p>
+            <ul class="tags">
+              <li>React Router</li>
+              <li>Context API</li>
+              <li>Vitest</li>
+            </ul>
+            <a href="https://github.com/sagyntayeva/iwamad-practice/tree/week-04">Source code on GitHub</a>
+          </article>
+
+          <article class="card project">
+            <h3>Week 5: Design system from Figma</h3>
+            <p>
+              Design tokens, Button, Card and Tag components built from a Figma file.
+              I also fixed a text colour that failed WCAG contrast.
+            </p>
+            <ul class="tags">
+              <li>Figma</li>
+              <li>CSS variables</li>
+              <li>React</li>
+            </ul>
+            <a href="https://sagyntayeva.github.io/iwamad-practice/">Live demo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p>
+            Questions about my coursework or an internship? Leave a message, or find my code on
+            <a href="https://github.com/sagyntayeva">GitHub</a>.
+          </p>
+          <p class="muted">This form only checks your input. Nothing is sent to a server.</p>
+        </div>
+
+        <form class="card form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+            <p class="field__error" id="name-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+            <p class="field__error" id="email-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+            <p class="field__error" id="message-error"></p>
+          </div>
+
+          <button class="button" type="submit">Send</button>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ranida Sagyntayeva · HTML, CSS and JavaScript</p>
+    </div>
+  </footer>
+</body>
+</html>
